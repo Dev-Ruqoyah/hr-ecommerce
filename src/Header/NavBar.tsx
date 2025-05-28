@@ -10,21 +10,24 @@ import IconHeader from "./IconHeader";
 
 export function Navbar() {
   return (
-    <header className="flex items-center justify-between p-4 border-b">
-      <Link to="/" className="text-xl font-bold">
+    <div className="border-b">
+
+    <header className="flex items-center  justify-between py-4 container mx-auto ">
+      <Link to="/" className="text-xl  font-bold">
         MySite
       </Link>
 
-      <nav className="hidden md:flex gap-4">
+      <nav className="hidden md:flex gap-4 ms-7 ">
         <Link to="/about">About</Link>
         <Link to="/services">Services</Link>
         <Link to="/contact">Contact</Link>
       </nav>
 
-      <div className="flex ite">
+      <div className="flex items-center gap-2">
         <SearchBar />
         <IconHeader />
       </div>
     </header>
+    </div>
   );
 }
