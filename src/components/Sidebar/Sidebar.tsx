@@ -15,9 +15,9 @@ const Sidebar = () => {
 
   return (
     <div>
-      <ul className="flex flex-col gap-4 ">
+      <ul className="flex flex-col gap-5 ">
         {sidebar.map((sidelink, index) => (
-          <li key={index}>
+          <li key={index} className='hover:cursor-pointer'>
             <div className="flex items-center justify-between">
               <span>{sidelink}</span>
               {index < 2 && <ChevronRight className="text-xs" />}

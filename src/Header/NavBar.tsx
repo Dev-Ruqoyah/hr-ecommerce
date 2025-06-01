@@ -12,7 +12,7 @@ export function Navbar() {
   return (
     <div className="border-b">
 
-    <header className="flex items-center  justify-between py-4 container mx-auto ">
+    <header className="flex items-center  justify-between px-10 py-4 container mx-auto ">
       <Link to="/" className="text-xl  font-bold">
         MySite
       </Link>
